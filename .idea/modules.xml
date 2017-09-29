@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/quick-cloud.iml" filepath="$PROJECT_DIR$/quick-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quick-cloud-simple/quick-cloud-simple.iml" filepath="$PROJECT_DIR$/quick-cloud-simple/quick-cloud-simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quick-cloud-simple/simple-eureka-customer/simple-eureka-customer.iml" filepath="$PROJECT_DIR$/quick-cloud-simple/simple-eureka-customer/simple-eureka-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quick-cloud-simple/simple-eureka-provider/simple-eureka-provider.iml" filepath="$PROJECT_DIR$/quick-cloud-simple/simple-eureka-provider/simple-eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quick-cloud-simple/simple-eureka-server/simple-eureka-server.iml" filepath="$PROJECT_DIR$/quick-cloud-simple/simple-eureka-server/simple-eureka-server.iml" />
+    </modules>
+  </component>
+</project>
