@@ -17,7 +17,7 @@ public class TestService {
     private RestTemplate restTemplate; // HTTP 访问操作类
 
     public String hiService() {
-        return restTemplate.getForEntity("http://TEST-PROVIDER/provider",
+        return restTemplate.getForEntity("http://HI-PROVIDER/provider",
                 String.class).getBody();
     }
 }

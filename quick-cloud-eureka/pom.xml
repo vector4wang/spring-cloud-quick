@@ -11,6 +11,7 @@
         <module>simple-eureka-server</module>
         <module>simple-eureka-provider</module>
         <module>simple-eureka-customer</module>
+        <module>simple-eureka-customer-feign</module>
     </modules>
     <packaging>pom</packaging>
 

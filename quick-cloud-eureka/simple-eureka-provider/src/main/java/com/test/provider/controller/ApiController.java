@@ -7,6 +7,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -35,6 +36,14 @@ public class ApiController {
         LOGGER.info("provider service, host = " + instance.getHost()
                 + ", service_id = " + instance.getServiceId());
         return "Hello,Provider!";
+    }
+
+    @RequestMapping("/hi")
+    public String hi(@RequestParam("name")String name) {
+        ServiceInstance instance = serviceInstance();
+        LOGGER.info("provider service, host = " + instance.getHost()
+                + ", service_id = " + instance.getServiceId());
+        return "Hello, " + name + " Provider!";
     }
 
     /**
