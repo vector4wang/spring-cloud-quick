@@ -15,6 +15,7 @@
         <module>simple-eureka-hystrix</module>
         <module>simple-eureka-feign-hystrix</module>
         <module>simple-eureka-zuul</module>
+        <module>simple-eureka-config</module>
     </modules>
     <packaging>pom</packaging>
 
