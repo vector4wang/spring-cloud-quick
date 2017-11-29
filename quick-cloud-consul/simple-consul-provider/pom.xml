@@ -2,10 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <artifactId>simple-eureka-server</artifactId>
-    <groupId>com.test.cloud</groupId>
+    <artifactId>simple-consul-provider</artifactId>
+    <groupId>com.quick.cloud</groupId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
+    <description>
+        consul需要自己单独下载服务端
+        可参考blog "http://blog.csdn.net/forezp/article/details/70188595"
+    </description>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>
@@ -15,13 +19,17 @@
     </parent>
 
     <dependencies>
-        <!-- Spring Cloud Netflix Eureka Server 依赖 -->
+        <!-- 使用Consul作为注册中心 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
 
-        <!-- Spring Boot Test 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

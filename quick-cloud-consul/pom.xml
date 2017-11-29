@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>quick-cloud-consul</artifactId>
     <modules>
-        <module>simple-consul-servcer</module>
+        <module>simple-consul-provider</module>
     </modules>
     <groupId>com.quick.cloud</groupId>
     <version>1.0-SNAPSHOT</version>
